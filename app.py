@@ -7,10 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 # Load dataset
-df = pd.read_csv(
-    r"C:\Users\Rajamani\OneDrive\Desktop\Training projects\Sentiment-Analysis Social-Media\twitter_training.csv\twitter_training.csv",
-    header=None
-)
+df = pd.read_csv("twitter_training.csv", header=None)
 df.columns = ['ID', 'Topic', 'Sentiment', 'Text']
 
 # Clean text
